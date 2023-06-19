@@ -14,6 +14,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -26,6 +27,12 @@
             color: white;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
         .num{
             text-align: right;
         }
@@ -34,6 +41,10 @@
             font-size: 1.5m;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
             background-color: lightgray;
         }
 
