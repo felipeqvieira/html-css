@@ -1,0 +1,18 @@
+Existem alguns símbolos que podem ser exibidos usando códigos. Esses códigos são chamados de HTML Entities.
+
+    Espaço em branco &nbsp;
+    Marca Registrada &reg;
+    Copyright &copy;
+    Trade Mark &trade;
+    Euro &euro;
+    Libra &pound;
+    Yen &yen;
+    Cent &cent;
+    Vazio &empty;
+    Soma &sum;
+    Delta &Delta;
+    Seta esquerda &larr;
+    Seta acima &uarr;
+    Seta direita &rarr;
+    Seta baixo &darr;
+    
