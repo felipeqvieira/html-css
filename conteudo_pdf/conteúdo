@@ -1,0 +1,77 @@
+Parágrafos 
+    <p> e <\p>
+
+Quebra de linhas
+    <br>
+
+Símbolos:
+
+    Espaço em branco &nbsp;
+    Marca Registrada &reg;
+    Copyright &copy;
+    Trade Mark &trade;
+    Euro &euro;
+    Libra &pound;
+    Yen &yen;
+    Cent &cent;
+    Vazio &empty;
+    Soma &sum;
+    Delta &Delta;
+    Seta esquerda &larr;
+    Seta acima &uarr;
+    Seta direita &rarr;
+    Seta baixo &darr;
+
+Emojis:
+    Emojipedia.org
+    Procure o seu codepoints (U+1F604)
+    &#x1F604
+
+Imagens com domínio público:
+        UnSplash
+        Pexels
+        FreePik
+        Rawpixel
+        Pixabay
+        Libreshot
+        Wikimedia Commons
+
+Imagens
+    <img src"logo-html.png" alt="logo html">
+    <img src"fotos/logo-html.png" alt="logo html">
+    <img src"https://www.jsdotgit.com/js-small.gif" alt="logo java script">
+
+Favicon 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+Negrito
+    <strong></strong>
+
+Italico 
+    <em>
+
+Marca texto
+    <mark></mark>
+
+Texto riscado
+    <del></del>
+
+Texto inserido
+    <ins></ins>
+
+Texto sobrescrito e subscrito
+    <sub></sub>
+    <sup></sup>
+
+Trechos de código
+    <code></code>
+
+Citações
+    <q></q>
+    <blockquote></blockquote>
+
+Abreviações
+    <abbr title=""></abbr>
+
+Texto invertido
+    <bdo dir=""></bdo>
