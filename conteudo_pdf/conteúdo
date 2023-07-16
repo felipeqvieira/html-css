@@ -75,3 +75,95 @@ Abreviações
 
 Texto invertido
     <bdo dir=""></bdo>
+
+Listas ordenadas
+    <ol type="" start="">
+        <li></li>
+    </ol>
+    
+Listas não ordenadas
+    <ul type="">
+        <li></li>
+    </ul>
+
+Lista de definições
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>    
+    </dl>
+
+Links
+    <a href="" target="" rel=""></a>
+
+Downloads
+    <a href="" download="" type=""></a>
+    application/zip;
+    text/html;
+    text/css;
+    video/mp4;
+    video/H264;
+    video/JPEG;
+    audio/aac;
+    audio/mpeg;
+    font/ttf;
+    image/jpeg;
+    image/png;
+
+Imagens Flexíveis
+    <picture>
+        <source media="(max-width: 1050px)" srcset="" type="">
+        <source media="(max-width: 750px)" srcset="">
+        <img src="" alt="">
+    </picture>
+
+Áudios
+    <audio preload="" controls autoplay loop>
+        <source src="" type="audio/mpeg">
+        <source src="" type="audio/ogg">
+        <source src="" type="image/wav">
+        <p>Seu navegador não suporta áudio<a href="" download="" type=""></a></p>
+    </audio>
+
+Vídeos
+    <video width="" poster="" controls autoplay>
+        <source src="" type="video/webm">     
+        <source src="" type="video/mp4">  
+        <source src="" type="video/ogg">     
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+
+Tipos de Caixa
+
+    Block-level
+        Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do body.
+
+        <address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt> <fieldset> <figcaption> <figure><footer> <form> <h1-6> <header> <hr> <li> <main> <nav> <noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video>
+
+    Inline-level
+        Um elemento do tipo inline-level não vai começar em uma nova linha, e sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo.
+        <!-- <a> <abbr> <b> <bdo> <br> <button> <cite> <code> <dfn> <em> <i> <img> <input> <kbd> <label> <map> <object> <output> <q> <samp> <script> <select> <small> <span> <strong> <sub> <textarea> <var> -->
+
+
+Grouping Tags e Semantic Tags
+
+    Header
+        Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6> e subtítulos. Podem também conter menus de navegação.
+    
+    Nav
+        Define uma área que possui os links de navegação pela estrutura de páginas que vão compor o website. Um <nav> pode estar dentro de um <header>.
+    
+    Main
+        É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos.
+    
+    Section
+        Cria seções para a sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, "uma seção é um agrupamento temático de conteúdos, tipicamente como um cabeçalho".
+
+    Article
+        Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc.
+
+    Aside
+        Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo aside está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre "Múltiplos Níveis".
+
+    Footer
+        Rodapé.
