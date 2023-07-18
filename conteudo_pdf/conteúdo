@@ -167,3 +167,192 @@ Grouping Tags e Semantic Tags
 
     Footer
         Rodapé.
+
+Tabelas
+    <table>
+        <tr> <!-- linha 1 -->
+            <td rowspan="2"></td> <!-- coluna 1 que ocupa 2 linhas-->
+        </tr>
+        <tr> <!-- linha 2 -->
+            <td></td> <!-- coluna 1 -->
+            <td></td> <!-- coluna 2 -->
+        </tr>
+        <tr> <!-- linha 3 -->
+            <td colspan="2"></td> <!-- coluna 1 que ocupa 2 colunas -->
+        </tr>
+    </table>
+
+    <!-- Estrutura de uma tabela -->
+    <thead>
+        <tr>
+            <th>
+                Mês
+            </th>
+            <th>
+                Valor
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <td>Total</td>
+        <tfoot>R$180</tfoot>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+
+Formulários
+
+    <form action="#" method="post"> 
+        
+        <!-- action é o destino-->
+
+        <!-- get deixa exposto as informações, expõe os dados do usuário.-->
+
+        <!-- post esconde os dados e envia diretamente para o destino -->
+
+        <!-- parâmetros do form: autocomplete, enctype (envio de arquivos), name, novalidate(não valida informações), target (se o envio vai para uma nova página do navegador)-->
+
+        Nome: <input type="text" name="nome" placeholder="Informe o seu nome" required>  <br>
+        CPF: <input type="text" name="cpf" maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required> <br>
+        Senha: <input type="password" name="senha"> <br>
+
+        <!-- para informações maiores (endereço, por exemplo)-->
+        Descrição: <textarea name="descricao"></textarea>
+        <!-- parâmetros para textarea: autofocus, cols, disabled, maxlength, name, placeholder, readonly, required, rows, wrap -->
+        
+        <!-- parâmetros do input: autocomplete, autofocus, disabled, max, maxlength, min, name, pattern, placeholder ("Informe seu nome"), readonly, required, size, type, value -->
+    </form>
+
+Botões
+
+    <button type="button">
+        Clique
+    </button>
+
+    <form action="#" method="post">
+        Login: <input type="text" name="login"> <br>
+        Senha: <input type="password" name="senha"> <br>
+        <button type="submit">
+            Quero me logar
+        </button>
+    </form>
+
+    <!-- Parâmetros do button: autofocus; disabled; name; type: button, reset, submit; value-->
+    <!-- Parâmetros específicios do button type submit: formaction (qual a pagina que vai receber), formmethod, formnovalidate, formtarget (formulario abre na propria aba ou em uma diferente)-->
+
+Rótulos e Agrupamentos de campos
+
+    <form action="post">
+        <label for="homem">Homem</label>
+        <input type="radio" name="sexo" id="homem" value="homem"> <br>
+        <label for="mulher">Mulher</label>
+        <input type="radio" name="sexo" id="mulher" value="mulher"> <br>
+    </form>
+
+    <form action="post" action="#">
+        <label id="endereco" for="endereco">Endereco:</label>
+        <textarea name="">Av. Brasil, 12 - Cidade - Estado</textarea>
+    </form>
+    
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        Nome: <input type="text"> <br>
+        Email: <input type="text"> <br>
+        Nascimento: <input type="text">
+    </fieldset>
+
+Campos de Seleção
+
+    <form method="post" action="#">
+
+        Quais cursos você fará? <br>
+        
+        <input type="checkbox" name="html" value="1">HTML<br>
+        <input type="checkbox" name="css" value="1">CSS<br>
+        <input type="checkbox" name="javascript" value="1">JavaScript<br>
+
+    </form>
+
+    <!-- Diferença Radio e Checkbox: Checkbox é quadrado, Radio é círculo. Radio permite apenas uma opção, checkbox pode mais de uma opção. -->
+
+    <form method="post" action="#">
+
+        Qual curso você fará? <br>
+        <input type="radio" name="curso" value="html">HTML <br>
+        <input type="radio" name="curso" value="css">CSS <br>
+        <input type="radio" name="curso" value="javascript">JavaScript <br>
+
+    </form>
+
+    <!-- Parâmetros exclusivos do tipo checkbox/radio: checked (já deixar marcado) -->
+
+    <form method="post" action="#">
+
+        Qual aparelho você possui? <br>
+
+        <input type="checkbox" name="notebook" value="sim">
+        Notebook <br>
+        <input type="checkbox" name="tablet" value="sim">
+        Tablet <br>
+        <input type="checkbox" name="celular" value="sim" checked>
+        Celular
+
+    </form>
+
+Select
+
+    <form action="">
+
+        Qual curso você fará <br>
+        <select name="curso">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>        
+        </select>
+
+    </form>
+
+    <!-- Parâmetros específicos do select: autofocus, disabled, multiple, name, required, size -->
+    <!-- Parâmetros específicos do option: disabled, label, selected, value -->
+
+Novos Campos
+
+    <form action="#" method="post">
+        <input type="email" name="email">
+    </form>
+
+    <form action="#" method="post">
+        <input type="date" name="data">
+    </form>
+
+    <form action="#" method="post">
+        <input type="range" name="faixa">
+    </form>
+
+    <form action="#" method="post">
+        <input type="color" name="cor">
+    </form> <!-- retorna na cor escrita em hexadecimal -->
+
+    <form action="#" method="post">
+        <input list="cursos" name="curso">
+        <datalist id="cursos">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+        </datalist>
+    </form>
+
+    <form action="#" method="post">
+        <input type="hidden" name="id" value="123">
+    </form>
+    <!-- Usado para passar números de identificação em formulários -->
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" name="arquivo">
+    </form> <!-- só funciona com o method post -->
+
+    <!-- Parâmetros do tipo file: accept, alt -->
+    
