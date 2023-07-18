@@ -355,4 +355,99 @@ Novos Campos
     </form> <!-- só funciona com o method post -->
 
     <!-- Parâmetros do tipo file: accept, alt -->
-    
+
+                            CSS
+
+Interno
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <style>
+        
+        </style>
+    </html>
+
+Externo
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            Texto
+        </body>
+    </html>
+
+ID's usam #
+Classes usam .
+
+Formatação de fontes 
+Texto: alinhamento e espaçamento
+
+    p{
+        font-family: Arial;
+        font-size: 12pt;
+        letter-spacing: 0.5em;
+        text-align: justify;
+        font-weight: bold;
+    }
+
+Decoração:
+    text-decoration
+
+Recuo do parágrafo:
+    text-ident
+
+Sombra e letras maiúsculas e minúsculas
+    text-shadow: blue 5px 6px 2px;
+    text-transform: capitalize;
+
+Espaçamento:
+    word-spacing: 0.5em;
+
+Links
+    a:hover
+    a:link
+    a:visited
+    a:active
+
+Listas
+
+    Listas com imagem
+    ul{
+        font-family: Arial;
+        font-size: 12pt;
+        list-style-image: url(bolo.png);
+        list-style-position: inside; <!-- outside para fora da lista -->
+    }
+
+    Tipos de marcadores
+    ul{
+        font-family: Arial;
+        font-size: 12pt;
+        list-style-type: lower-alpha; 
+        <!-- Outros possíveis: disc; circle; square; decimal-leading-zero; lower-roman; upper-roman; lower-alpha; upper-alpha; lower-greek; lower-latin; upper-latin; armenian; georgian; hebrew; hiragana; katakana; hiragana-iroha; katakana-iroha; -->
+    }
+
+Media Query
+
+    <link rel="stylesheet" href="style.css" media="screen and (color)">
+    <link rel="stylesheet" href="" media="screen and (max-width: 480px)">
+
+    <!-- Mais algumas opções para especificar: width; height; device-width; device-height; orientation; aspect-ratio; device-aspect-ratio; color; color-index; monochrome; resolution; scan; grid -->
+
+    No CSS:
+    body{
+        background: #eee;
+    }
+    @media screen and (max-width: 600px){
+        body{
+            background: #F9C;
+        }
+    }
+    @media screen and (min-width: 900px){
+        body{
+            background: #F90;
+        }
+    }
